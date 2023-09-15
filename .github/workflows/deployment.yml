@@ -10,8 +10,7 @@ jobs:
         run: npm ci
       - name: Test application
         run: npm run test
-lint:
-test:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Get repository code
@@ -20,8 +19,7 @@ test:
         run: npm ci
       - name: Lint application
         run: npm run lint
-build:
-test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Get repository code
